@@ -99,3 +99,27 @@ export const StyleMetal: vue.ComponentOptions<Vue> = StyleFactory({
     backgroundColor: 'rgba(0, 0, 0, 0.5)'
   }
 })
+
+
+export const StyleOSX: vue.ComponentOptions<Vue> = StyleFactory({
+  window: {
+    color: '#000',
+    boxShadow: '0 4pt 8pt rgba(0, 0, 0, 0.5)',
+    background: 'linear-gradient(to bottom, rgb(215, 215, 215), rgb(191, 191, 191))'
+  },
+  titlebar: {
+    background: 'linear-gradient(to bottom, rgb(215, 215, 215), rgb(191, 191, 191))'
+  },
+  content: {
+  },
+  button: {
+    color: '#000'
+  },
+  buttonHover: {
+    backgroundColor: 'rgba(0, 0, 0, 0.25)'
+  },
+  buttonActive: {
+    color: '#fff',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)'
+  }
+})

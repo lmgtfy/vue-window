@@ -1,5 +1,5 @@
 import MyWindow from "./window/index.vue"
-import { StyleBlack, StyleWhite, StyleMetal, StyleFactory } from './style'
+import { StyleOSX, StyleBlack, StyleWhite, StyleMetal, StyleFactory } from './style'
 import Vue from 'vue'
 
 export { WindowResizeEvent, fixPosition } from "./window/script"
@@ -11,6 +11,7 @@ export function install(vue: typeof Vue, options = { prefix: 'hsc-window' }) {
   vue.component(`${prefix}-style-black`, StyleBlack)
   vue.component(`${prefix}-style-white`, StyleWhite)
   vue.component(`${prefix}-style-metal`, StyleMetal)
+  vue.component(`${prefix}-style-osx`, StyleOSX)
 }
 
 export { windows } from "./windows"
