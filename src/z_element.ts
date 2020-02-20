@@ -39,7 +39,7 @@ export class ZElement {
 const registry = new Map<number, ZElement[]>()
 
 
-const BASE = 0
+const BASE = 10000
 
 
 function a(group: number) {
